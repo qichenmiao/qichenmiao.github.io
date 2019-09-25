@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#d{
+			display:flex;
+			width:300px;
+			height:200px;
+			/* border:1px solid red; */
+			align-items:center;
+			justify-content:space-around;
+		}
+	</style>
+	<script src="jquery/jquery1.9/jquery-1.9.0.js"></script>
+	<script>
+		// $(function(){
+
+		// 	//双击
+		// 	$("select:eq(0) option").dblclick(function(){
+		// 		$(this).appendTo($("select:eq(1)"));
+		// 	});
+
+		// 	//批量移动
+		// 	$("input").eq(0).click(function(){
+		// 		console.log($("select:eq(0) :selected").val()); 
+		// 		$("select:eq(0) :selected").each(function(index,items){
+		// 			$(this).appendTo($("select:eq(1)"));
+		// 		});
+		// 	});
+
+		// 	//全部移动
+		// 	$("input").eq(1).click(function(){
+		// 		$("select:eq(0) option").each(function(index,items){
+		// 			$(this).appendTo($("select:eq(1)"));
+		// 		});
+		// 	});
+
+
+		// 	//复原
+		// 	$("input").eq(2).click(function(){
+		// 		$("select:eq(1) option").each(function(index,items){
+		// 			$(this).appendTo($("select:eq(0)"));
+		// 		});
+		// 	});
+		// });
+
+		var a=new Date(2017,1,33);
+		console.log(a.getMonth());
+		console.log(a.getDate());
+
+	</script>
+</head>
+<body>
+	<div id="d">
+		<div>
+			<select style="height: 150px;width: 80px;" multiple>
+				<option value="0">选项1</option>
+				<option value="1">选项2</option>
+				<option value="2">选项3</option>
+				<option value="3">选项4</option>
+				<option value="4">选项5</option>
+			</select>
+		</div>
+		<div>
+			<input type="button" value="批量移动">
+			<br>
+			<br>
+			<input type="button" value="全部移动">
+			<br>
+			<br>
+			<input type="button" value="复原">
+		</div>
+		<div>
+			<select style="height: 150px;width: 80px;" multiple></select>
+		</div>
+
+	</div>
+	
+</body>
+</html>
